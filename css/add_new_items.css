@@ -1,0 +1,74 @@
+.pre-list {
+  overflow-y: scroll;
+  
+}
+h2 , h3 {
+  margin: 0 0 .4rem 0;
+}
+hr {
+  width: 100%;
+}
+
+p {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 0.81rem;
+  position: relative;
+}
+p::first-letter {
+  text-transform: uppercase;
+}
+form {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  border: 1px solid #eee;
+}
+
+input:not([type="color"]),
+textarea {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 1rem;
+  border: 1px solid rgb(212, 207, 207);
+  border-radius: 5px;
+}
+.header_2{
+  align-self: flex-start;
+}
+fieldset {
+  margin: 1rem;
+  padding: 1rem;
+  border: 1px solid rgb(189, 186, 186);
+  background: #eee;
+  border-radius: 5px;
+  width: 50vw;
+  height: 80vh;
+  position: absolute;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+}
+.tagColor {
+  color: rgb(0, 0, 0);
+  padding:.2rem;
+  margin: 0.2rem;
+  text-align: center;
+  font-size: 0.81em;
+  border: 1px solid;
+  border-radius: 0.2rem;
+  position: relative;
+}
+.delItem {
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+}
+
+.form-group {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.form-group input:not([type="color"]) {
+  width: auto;
+}

@@ -1,0 +1,88 @@
+:root {
+  /* defaults */
+  --primary: rgb(0, 82, 255);
+  --success: rgb(0, 161, 40);
+  --default: rgb(255, 255, 255);
+  --black: rgb(34, 32, 32);
+
+  /* backgrounds */
+  --bg-primary: rgb(46, 92, 243);
+  --bg-success: rgb(3, 190, 88);
+  --bg-black: rgb(26, 29, 27);
+  /* text */
+  --txt-default: rgb(255, 255, 255);
+  --txt-black: rgb(32, 32, 32);
+}
+input[type=checkbox]{
+  background-color: var(--bg-primary) !important;
+
+}
+strong {
+  font-size: 0.8rem;
+}
+
+.btn-primary {
+  background-color: var(--bg-primary);
+  cursor: pointer;
+  border: 0 !important;
+  border-radius: 3px !important;
+  padding: 5px !important;
+  color: var(--txt-default);
+  transition: cubic-bezier(0.165, 0.84, 0.44, 1) 300ms;
+}
+.btn-primary:hover {
+  box-shadow: -1px 2px 13px 0px var(--primary);
+}
+.btn-success {
+  background-color: var(--bg-success);
+  cursor: pointer;
+  border: 0 !important;
+  color: var(--txt-default);
+  padding: 5px !important;
+  transition: cubic-bezier(0.165, 0.84, 0.44, 1) 300ms;
+}
+.btn-success:hover {
+  box-shadow: -1px 2px 13px 0px var(--success);
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(156, 154, 154);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.devider{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.devider::before{
+  content: '';
+  display: block;
+  height: 1px;
+  width: 25%;
+  background: var(--primary);
+}
+.devider::after{
+  content: '';
+  display: block;
+  height: 1px;
+  width: 25%;
+  background: var(--primary);
+}
+  

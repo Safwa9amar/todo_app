@@ -1,0 +1,110 @@
+nav {
+  display: flex;
+  flex-direction: column;
+
+  background-color: rgb(36, 35, 35);
+
+  z-index: 10000;
+
+  position: absolute;
+  left: calc(50% - 100vw);
+
+  height: 100vh;
+  width: 50vw;
+
+  opacity: 0.97;
+  transition: ease-in-out 400ms;
+
+  box-shadow: 1px 0 10px 0 rgb(94, 93, 93);
+}
+
+nav a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-family: "Courier New", Courier, monospace;
+  font-size: 0.87788rem;
+  margin: 15px;
+  padding-left: 15px;
+  height: 20px;
+  bottom: 1px solid;
+}
+nav a:hover {
+  letter-spacing: 1px;
+  color: burlywood;
+  transition: ease 500ms;
+}
+
+.nav-active {
+  left: 0;
+}
+
+.nav-el-active {
+  border-left: 5px solid rgb(25, 0, 248);
+  color: burlywood;
+  font-weight: bold;
+}
+
+.nav-show-button {
+  position: absolute;
+  bottom: 5%;
+  left: 5%;
+  /* border: 1px solid var(--primary); */
+  background-color: #eee;
+  border-radius: 100%;
+  height: 50px;
+  width: 50px;
+  line-height: 50px;
+  text-align: center;
+  cursor: pointer;
+  z-index: 10000;
+  transition: ease-in-out 300ms;
+}
+.nav-show-button:hover  {
+  box-shadow: 0 0 25px 1px var(--primary);
+}
+.nav-hide {
+  transform: rotate(45deg);
+}
+
+.humberger-menu {
+  width: 2rem;
+  height: 1.4rem;
+  background: inherit;
+  border-radius: 0.1rem;
+  padding: 0.1rem;
+  position: absolute;
+  right: 0;
+  transform: translate(100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+
+}
+
+.humberger-menu span {
+  height: 0.1rem;
+  width: 80%;
+  background-color: var(--default);
+  pointer-events: none;
+  transition: transform ease-in 500ms;
+
+}
+.humberger-menu:hover {
+  cursor: pointer;
+  background: var(--primary);
+}
+
+.humberger-menu.active span:nth-child(2) {
+  display: none;
+}
+.humberger-menu.active span:nth-child(1) {
+  transform: rotate(45deg);
+  transform-origin: center bottom;
+}
+.humberger-menu.active span:nth-child(3) {
+  position: absolute;
+  transform: rotate(-45deg);
+  transform-origin: center bottom;
+}
+

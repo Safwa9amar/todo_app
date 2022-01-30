@@ -1,0 +1,58 @@
+.todo-container {
+  /* border: 1px solid rgb(201, 198, 198); */
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 0.5em;
+  height: 90%;
+  width: 100vw;
+  display: flex;
+  flex-flow: column;
+}
+/* .tag-color:hover {
+  box-shadow: inset 0px 0px  5px 0 rgb(2, 197, 223);
+  transition: ease-in 500ms;
+  color: red;
+} */
+.tags {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.tag-color {
+  display: flex;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 0.8rem;
+  border-radius: 0.1rem;
+  padding: 0.1rem;
+  margin: 0.2rem;
+  cursor: pointer;
+}
+.tag_length {
+  background: var(--bg-black);
+  color: var(--txt-default);
+  border-radius: 0.1rem;
+  padding: 0.1rem;
+  margin: 0;
+  align-self: flex-end;
+  margin-left: 0.1rem;
+}
+.tag_name {
+  border-radius: 0.1rem;
+  padding: 0.1rem;
+  background: var(--bg-defaut);
+  color: var(--txt-black) !important;
+}
+.todo-list {
+  border: 1px solid rgba(201, 198, 198, 0.726);
+  border-radius: 0.1rem;
+  text-align: justify;
+  margin-top: 1rem;
+  padding: 1rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+
+  font-size: 0.9rem;
+  overflow: scroll;
+}
+label::first-letter {
+  text-transform: uppercase;
+}

@@ -1,0 +1,54 @@
+@media screen and (min-width: 720px) {
+  nav {
+    flex-direction: row;
+    width: 100vw;
+    height: auto;
+    left: 0;
+    transition: none;
+  }
+  .humberger-menu{
+    display: none;
+  }
+  .portfolio{
+    display: none;
+  }
+
+  section {
+    width: 100vw;
+    height: 90vh;
+    top: 10vh;
+  }
+  form {
+    flex: 0.8;
+    padding: 10px;
+  }
+  .pre-list {
+    border: 1px solid rgb(116, 114, 114);
+    border-radius: .2rem;
+    padding: 1rem;
+    flex: 1;
+  }
+  fieldset {
+    position: relative;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 50%;
+  }
+  #save_items_btn {
+    position: absolute;
+    bottom: 1%;
+    /* left: ; */
+    width: auto;
+  }
+  .nav-show-button {
+    display: none;
+  }
+  .nav-el-active {
+    border-left: 0;
+    border-bottom: 2px solid rgb(25, 0, 248);
+  }
+  input,
+  textarea {
+    margin: 0.5rem;
+  }
+}

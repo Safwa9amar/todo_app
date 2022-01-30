@@ -1,0 +1,26 @@
+.toggle_todo_section {
+  /* opacity: 0; */
+  animation: toggleSections 300ms cubic-bezier(0, -0.43, 0.03, 0.74) forwards;
+}
+
+@keyframes toggleSections {
+  0% {
+    opacity: 0;
+
+  }
+
+  100% {
+    z-index: 1;
+    opacity: 1;
+  }
+
+}
+
+@keyframes hideBallon {
+  from{
+    opacity: 1;
+  }
+  to{
+    opacity: 0;
+  }
+}
